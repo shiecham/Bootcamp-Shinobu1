@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Raleway&display=swap');
+
+/* 
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
+ */
+
+/* Universal */
+/* * {
+    color: burlywood;
+} */
+
+
+/* Element */
+h3 {
+    color: red;
+}
+
+h1 {
+    color: red;
+}
+
+h1 {
+    color: blue;
+}
+
+/* ul {
+    background-color: goldenrod;
+} */
+
+
+/* Class */
+/* .chapter {
+    color: red;
+} */
+
+
+/* ID */
+/* #chapter-two{
+    color: blue;
+} */
+
+/* #list 
+{
+    color: green;
+} */
+
+
+/* Combinator -- combination of selectors */
+/* parent child */
+/* .part-2 .chapter-1 {
+    background-color: aquamarine;
+} */
+
+/* .part-1 .chapter-1 p {
+    color: red;
+} */
+
+/* .part-2 p{
+    color: green;
+} */
+
+/* .part-3 ul li {
+    background-color: aquamarine;
+}
+
+#menu {
+    background-color: orange;
+} */
+
+
+/*** Color ***/
+/* .chapter-1 p {
+    background-color: rgb(98, 91, 142);
+}
+
+.chapter-1 .chapter-1 p{
+    background-color: rgba(219, 106, 142,0.5);
+}
+
+
+.chapter-2 p{
+    background-color: #5daf54;
+} */
+
+/*** Font Family ***/
+.part-1 .chapter-1 p {
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.part-1 .chapter-2 p {
+    font-family: sans-serif;
+
+}
+
+.part-1 .chapter-3 p {
+    font-family: monospace;
+
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+}
+
+/*** Font Size ***/
+/* px - smallent unit of measure in digital format */
+/* rem - root size, 16px by default */
+/* % - relative to the parent */
+
+#chapter-one {
+    font-size: 25px;
+}
+
+
+
+.chapter-2 {
+    font-size: 20px;
+}
+
+#chapter-two {
+    font-size: 50%;
+    /* 10px beacouse 50% of 20px */
+}
+
+
+.chapter-3 {
+    font-size: 5px;
+}
+
+#chapter-three {
+    font-size: 3em;
+    /*  15px = 5px * 3 */
+}
+
+/* font-weight 
+
+    1.lighter
+    2.normal
+    3.bold
+
+    100 - 900 google fontの中は１００−９００のみ
+ */
+
+/* and selecter (,) */
+/* h3,p,ul{
+
+    font-weight: bold;
+ } */
+
+.part-4 p {
+    font-weight: 900;
+}
+
+/* font-style
+
+    1.Normal
+    2.Italic
+    3.oblique 
+    
+*/
+
+.part-5 ul li {
+    font-style: italic;
+}
+
+.part-5 ol li {
+    font-style: oblique;
+}
+
+/* text tranceform 
+    1,uppercase
+    2,lowercase
+    3,capitalize
+*/
+
+.part-6 h3 {
+    text-transform: uppercase;
+}
+
+.part-6 h4 {
+    text-transform: lowercase;
+}
+
+.part-6 h5 {
+    text-transform: capitalize;
+}
+
+/* text-decoration
+    1.over-line
+    2.line-though
+    3.underline
+    4.none
+*/
+
+.part-7 h4 {
+    text-decoration: overline;
+}
+
+.part-7 h5 {
+    text-decoration: line-through;
+}
+
+.part-7 h6 {
+    text-decoration: underline;
+}
+
+.part-7 a {
+    text-decoration: none;
+}
+
+/* text-aline
+    1,left ( default position of all element)
+    2,center
+    3,right
+*/
+
+.part-8 h4 {
+    text-align: left;
+}
+
+.part-8 h5 {
+    text-align: center;
+}
+
+.part-8 h6 {
+    text-align: right;
+}
+
+/* text-shadow 
+    text-shadow: 1st 2nd 3rd 4th;
+
+     1st = holizontal (- go to left), (* go to right)
+     2nd = vertical  (- go to up), (* go to down)
+     3rd = blury
+     4th = color
+*/
+
+
+.part-9 h4 {
+    text-shadow: 3px -3px 4px #069a8e,
+        -3px 3px 4px #f8b400
+}
+
+
+/* text-indent 
+    16px = defalt font-size
+    px
+    %
+    em
+*/
+.part-10 .first {
+    text-indent: 50px;
+}
+
+.part-10 .second {
+    text-indent: 5%;
+}
+
+.part-10 .third {
+    text-indent: 5em;
+}
+
+/* leater-spacing */
+.part-11 .first {
+    letter-spacing: 10px;
+    background-color: #069a8e;
+}
+
+.part-11 .second {
+    letter-spacing: 20px;
+    background-color: #f8b400;
+}
+
+.part-11 .third {
+    letter-spacing: 30px;
+    background-color: beige;
+}
+
+/* woerd-spaeing */
+.part-12 .first {
+    word-spacing: 10px;
+    background-color: #069a8e;
+}
+
+.part-12 .second {
+    word-spacing: 20px;
+    background-color: #f8b400;
+}
+
+.part-12 .third {
+    word-spacing: 30px;
+    background-color: beige;
+}
+
+img {
+    width: 50%;
+}
+
+/*  CSS Lists
+
+    unorder list
+        disc
+        circle
+        square
+
+    ordered list
+    type
+        decimal
+        lower-alpha
+        upper-alpha
+        lower-roman
+        upper-roman
+        none
+*/
+.part-13 ul li {
+    list-style: upper-roman inside;
+    /* list-style-position: inside; */
+    background-color: #069a8e;
+}
+
+.part-13 ol li {
+    /* list-style-type: square;
+    list-style-position: outside;   */
+    list-style: square outside;
+    background-color: #f8d400;
+}
+
+/*  CSS Background Images */
+.part-14 p {
+    color: bisque;
+}
+
+.part-14 {
+    background-color: aqua;
+    height: 300px;
+    width: 100%;
+    /* background-image: url(../images/suzukicar.jpeg); */
+    /* back ground-size : width height */
+    /* background-repeat: no-repeat;*/
+    /*background-position: center;*/
+    overflow: auto;
+    /* will resolve the overflowing contents */
+    /* background-attachment: fixed; */ 
+    /* sortcut below */
+    /* back ground : bg-color bg-image bg-repoeat bg-attument bg-possition */
+    background: aqua  url(../images/suzukicar.jpeg) no-repeat fixed center ;
+    background-size: cover;
+}
+
+/* CSS tables */
+.part-15 table {
+    width: 500px;
+    border-collapse: separate; 
+    /* separate = default 
+        collapse = collapse into shingle border 
+    */
+    empty-cells: show; 
+    /* show = default =separateの時のみ
+        hide = hide the empty cells*/
+
+    border-spacing: 30px 10px;
+    /* border-spacing: holizontal vertical
+        if one velu only, apply will side/both holizontal and vertical  
+    */
+    border-color: blue;
+    background-color: #069a8e;
+}
+
+.part-15 table tr td {
+    background-color: aqua;
+}
+
+.part-15 .gold{
+    background-color: gold;
+}
+
+.part-15 #pink{
+    background-color: pink;
+}
+/* Box Model */
+.part-16 h3{
+    border: 1px solid black;
+    width: 100px;
+    margin: 10px 30px 50px 70px;
+}
+.part-17 h3{
+    border: 1px solid black;
+    width: 100px;
+    padding: 10px 30px 50px 70px;
+}
+
+.part-18 h3{
+    border: 1px solid black;
+    width: 100px;
+    padding: 10px 30px 50px 70px;
+    box-sizing: border-box; /*maitain actual size of the model box */
+}
+
+.part-19 h3{
+    border: 1px solid black;
+    width: 200px;
+    /* margin: 10px 30px 50px 70px;*/
+} 
+
+/* Borders */
+.part-20 .solid {
+    /* border-width: 10px;
+    border-style: solid;
+    border-color: tomato; */
+    /* border: border-width border-style border-color = sortcut */
+    border: 10px solid tomato;
+}
+
+.part-20 .dotted {
+    border: 10px dotted teal;
+}
+.part-20 .dashed {
+    border: 10px dashed crimson;
+}
+.part-20 .double {
+    border: 10px double green;
+}
+.part-20 .groove {
+    border: 10px groove purple;
+}
+
+.part-20 .ridge {
+    border: 10px ridge grey;
+}
+.part-20 .inset {
+    border: 10px inset blue;
+}
+
+.part-20 .outset {
+    border: 10px outset goldenrod;
+}
+.part-20 .radius {
+    border: 10px solid black;
+    border-radius: 50px;
+}
+
+.part-20 .spec-border {
+    border:  5px solid teal;
+    margin-top: 20px;
+    width: 100px;
+    border-left: 5px dotted teal;
+    border-right: 5px double teal;
+}
+
+/* Box Shadow */
+.part-21 .box-shadow {
+    border: 1px solid black;
+    width:  500px;
+    margin-bottom: 50px;
+    margin-left: auto ;
+    margin-right:auto ;
+    
+
+/* 
+    Box Shadow
+    1st value = right side if positive(+), left(-)
+    2nd value = bottom (+), top(-)
+    3rd value = blurry
+    4th value = color 
+*/
+    box-shadow: 10px 15px 10px red;
+    /* padding-left: 50px;
+    box-sizing: border-box; */
+    text-align: center;
+}
+
+

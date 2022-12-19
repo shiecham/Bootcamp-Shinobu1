@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Raleway&display=swap');
+
+/* 
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
+*/
+
+/* Universal */
+/* * {
+    color: burlywood;
+} */
+
+
+/* Element */
+h3 {
+    color: red;
+}
+
+h1 {
+    color: red;
+}
+
+h1 {
+    color: blue;
+}
+
+/* ul {
+    background-color: goldenrod;
+} */
+
+
+/* Class */
+/* .chapter {
+    color: blueviolet;
+} */
+
+
+/* ID */
+/* #chapter-two {
+    color: blue;
+} */
+/* #list {
+    color: green;
+} */
+
+
+/* Combinator -- combination of selectors */
+/* parent child */
+/* .part-2 .chapter-1 {
+    background-color: cadetblue;
+} */
+
+/* .part-1 .chapter-1 p {
+    color: red;
+} */
+
+/* .part-2 p {
+    color: green;
+} */
+
+/* .part-3 ul li {
+    background-color: aquamarine;
+} */
+
+/* #menu {
+    background-color: orange;
+} */
+
+/*** Color ***/
+/* .chapter-1 p {
+    background-color: rgb(23, 206, 26);
+}
+
+.part-1 .chapter-1 p {
+    background-color: rgba(23, 206, 26, 0.3);
+}
+
+.chapter-2 p {
+    background-color: #12accb;
+} */
+
+
+/*** Font Family ***/
+.part-1 .chapter-1 p {
+    font-family: 'Raleway', sans-serif;
+}
+
+.part-1 .chapter-2 p {
+    font-family: sans-serif;
+}
+
+.part-1 .chapter-3 p {
+    font-family: monospace;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/*** Font Size ***/
+/* px - smallest unit of measure in digital format */
+/* rem - root size, 16px by default */
+/* % - relative to the parent */
+
+#chapter-one {
+    font-size: 25px;
+}
+
+
+
+.chapter-2 {
+    font-size: 20px;
+}
+
+#chapter-two {
+    font-size: 50%;
+    /* 10px because 50% of 20px */
+}
+
+
+.chapter-3 {
+    font-size: 5px;
+}
+
+#chapter-three {
+    font-size: 3em;
+    /* 15px = 5px * 3 */
+}
+
+
+/* font-weight 
+
+    1. lighter
+    2. normal
+    3. bold
+
+    100 - 900
+*/
+
+/* and selector (,) */
+
+/* h3,p,ul{
+    font-weight: bold;
+} */
+
+.part-4 p {
+    font-weight: 900;
+}
+
+
+/* font-style 
+    
+    1. normal
+    2. italic
+    3. oblique
+
+*/
+
+.part-5 ul li {
+    font-style: italic;
+}
+
+.part-5 ol li {
+    font-style: oblique;
+}
+
+
+
+/* text-transform 
+    1. uppercase
+    2. lowercase
+    3. capitalize
+*/
+.part-6 h3 {
+    text-transform: uppercase;
+}
+
+.part-6 h4 {
+    text-transform: lowercase;
+}
+
+.part-6 h5 {
+    text-transform: capitalize;
+}
+
+
+
+/* text-decoration
+    1. overline
+    2. line-through
+    3. underline
+    4. none
+*/
+.part-7 h4 {
+    text-decoration: overline;
+}
+
+.part-7 h5 {
+    text-decoration: line-through;
+}
+
+.part-7 h6 {
+    text-decoration: underline;
+}
+
+.part-7 a {
+    text-decoration: none;
+}
+
+
+/* text-align 
+    1. left (default position of all elements)
+    2. center
+    3. right
+*/
+.part-8 h4{
+    text-align: left;
+}
+
+.part-8 h5 {
+    text-align: center;
+}
+
+.part-8 h6 {
+    text-align: right;
+}
+
+
+/* text-shadow
+    text-shadow: 1st 2nd 3rd 4th;
+
+        1st = horizontal (- go to left), (+ go to right)
+        2nd = vertical (- go up), (+ go down)
+        3rd = blurry
+        4th = color
+*/
+.part-9 h4 {
+    text-shadow: 3px -3px 4px #069A8E,
+    -3px 3px 4px #f8b400;
+}
+
+
+/* text-indent 
+    16px = default font-size
+        px
+        %
+        em
+*/
+.part-10 .first {
+    text-indent: 50px;
+}
+
+.part-10 .second {
+    text-indent: 5%;
+}
+
+.part-10 .third {
+    text-indent: 5em;
+}
+
+
+/* letter-spacing */
+.part-11 .first {
+    letter-spacing: 10px;
+    background-color: #069A8E;
+}
+
+.part-11 .second {
+    letter-spacing: 20px;
+    background-color: #f8b400;
+}
+
+.part-11 .third {
+    letter-spacing: 30px;
+    background-color: beige;
+}
+
+
+
+/* word-spacing */
+.part-12 .first {
+    word-spacing: 10px;
+    background-color: #069A8E;
+}
+
+.part-12 .second {
+    word-spacing: 20px;
+    background-color: #f8b400;
+}
+
+.part-12 .third {
+    word-spacing: 30px;
+    background-color: beige;
+}
+
+img {
+    width: 50%;
+}
+
+/* CSS Lists 
+
+    unordered list
+    type
+        disc
+        circle
+        square
+        none
+
+    ordered list
+    type
+        decimal
+        lower-alpha
+        upper-alpha
+        lower-roman
+        upper-roman
+        none
+
+*/
+.part-13 ul li {
+    list-style: upper-roman inside;
+    /* list-style-position: inside; */
+    background-color: #069A8E;
+}
+
+.part-13 ol li {
+    /* list-style-type: square;
+    list-style-position: outside; */
+    list-style: square outside;
+    background-color: #f8b400;
+}
+
+
+/* CSS Background Image */
+.part-14 p {
+    color: bisque;
+}
+.part-14 {
+    background-color: aqua;
+    height: 300px;
+    width: 300px;
+    background-image: url(../images/suzukicar.jpg);
+    /* background-size: width  height */
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}

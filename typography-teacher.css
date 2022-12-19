@@ -1,0 +1,96 @@
+/* Universal */
+/* * {
+    color: burlywood;
+} */
+
+
+/* Element */
+/* h3 {
+    color: red;
+} */
+
+
+/* Class */
+/* .chapter {
+    color: blueviolet;
+} */
+
+
+/* ID */
+/* #chapter-two {
+    color: blue;
+} */
+
+
+/* Combinator -- combination of selectors */
+/* parent child */
+/* .part-2 .chapter-1 {
+    background-color: cadetblue;
+} */
+
+/* .part-1 .chapter-1 p {
+    color: red;
+} */
+
+/* .part-2 p {
+    color: green;
+} */
+
+
+/*** Color ***/
+/* .chapter-1 p {
+    background-color: rgb(23, 206, 26);
+}
+
+.part-1 .chapter-1 p {
+    background-color: rgba(23, 206, 26, 0.3);
+}
+
+.chapter-2 p {
+    background-color: #12accb;
+} */
+
+
+/*** Font Family ***/
+.part-1 .chapter-1 p {
+    font-family: serif;
+}
+
+.part-1 .chapter-2 p {
+    font-family: sans-serif;
+}
+
+.part-1 .chapter-3 p {
+    font-family: monospace;
+}
+
+
+/*** Font Size ***/
+/* px - smallest unit of measure in digital format */
+/* rem - root size, 16px by default */
+/* % - relative to the parent */
+
+#chapter-one {
+    font-size: 25px;
+}
+
+
+
+.chapter-2 {
+    font-size: 20px;
+}
+
+#chapter-two {
+    font-size: 50%;
+    /* 10px because 50% of 20px */
+}
+
+
+.chapter-3 {
+    font-size: 5px;
+}
+
+#chapter-three {
+    font-size: 3em;
+    /* 15px = 5px * 3 */
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <center>
+    <h2>Simple table</h2>
+
+    <table border="1" width="300px">
+       <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+       </tr>
+
+       <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+       </tr>
+
+       <tr>
+        <td>7</td>
+      <td>8</td>
+      <td>9</td>
+      </tr>
+    </table>
+
+
+    <h2>Table head and Table Content and Table Footer</h2>
+    <!-- Table Head = Header Content
+        <thead></thead>
+
+     Table Content = Body content 
+        <tbody></tbody>
+
+     Table Footer = Footer content
+        <tfoot></tfoot>
+    -->
+
+    <table border="1" width="300px">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>29</td>
+                <td>John@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>27</td>
+                <td>Jane@gmail.com</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>
+                    <a href="https://m.facebook.com/login/?locale=ja_JP">facebook</a>
+                </td>
+
+                <td>
+                    <a href="https://m.facebook.com/login/?locale=ja_JP">facebook</a>
+                </td>
+
+                <td>                    
+                    <a href="https://m.facebook.com/login/?locale=ja_JP">facebook</a>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <h2>Colspan</h2>
+    <table border="1" width="300px">
+        <tr>
+            <th>Name</th>
+            <th colspan="2">Contact Number</th>
+            <!-- <th>Contact Number</th> -->
+        </tr>
+
+        <tr>
+            <td>Bill</td>
+            <td>12345</td>
+            <td>6789</td>
+        </tr>
+
+        <tr>
+            <td>Steve</td>
+            <td>12345</td>
+            <td>6789</td>
+        </tr>
+     </table>
+
+     <h2>rowspan</h2>
+     <table border="1" width"300px>
+        <tr>
+            <th>Name</th>
+            <th>Bill</th>
+            <th>Steve</th>
+
+        </tr>
+
+        <tr>
+            <th rowspan="2">Contact number</th>
+            <th>12345 </th>
+            <th>13579</th>
+
+        </tr>
+
+        <tr>
+            <!-- <th>Contact mumber</th> -->
+            <th>67890</th>
+            <th>24680</th>
+
+        </tr>
+     </table>
+
+
+    </center>
+</body>
+</html>
